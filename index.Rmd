@@ -1,0 +1,22 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jeff's awesome website
+
+
+## Links
+
+*[Google](https://www.google.com/)
+*[P8105](p8105.com)
+
+## local image
+![](images/nino.jpg)
+
+## Link to page within the site
+[About me](about.html)
+
