@@ -7,7 +7,7 @@ navbar:
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<dantongzhu1103@outlook.com>
-    - icon: campfire fa-lg
+    - icon: fa-github fa-lg
       href: http://github.com/Dantongtong/
 output:
   html_document:
