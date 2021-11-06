@@ -56,7 +56,9 @@ output:
 <ul>
 <li>Developed a new nanomachine via wedging Azobenzene and its derivative into DNA with 30% efficiency improvement</li>
 <li>Modelized the structure in caDNAno software and revised by analysing the data from experiments to increase the stability by 40%</li>
-<li>Created [video](https://www.youtube.com/watch?v=qm15e49A770) and [webpages](https://hust-china2018.github.io/BUTTERFLY_EFFECT/) in JavaScript</li>
+<li>Created [video](https://www.youtube.com/watch?v=qm15e49A770) and [webpages](https://hust-china2018.github.io/BUTTERFLY_EFFECT/) in JavaScript, CSS, HTML</li>
 <li>Coordinated brainstorms to develop a novel nanomotor in DNA Self-Assembly with 30% efficiency improvement</li>
 <li>Organized the team perfomance of eight undergraduates and made oral presentation on site: Butterfly Effect- A New Nanomachine Design, Biomolecular Design Competition, San Francisco, US, Oct. 2018</li>
 </ul>
+<img src="images/me.jpg" style="width:50%">
+<span><img src="images/teamwork.jpg" style="width:50%;float:right"></span>

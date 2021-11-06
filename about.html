@@ -11,7 +11,7 @@
 
 
 
-<title>About me</title>
+<title>More About me</title>
 
 <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -223,69 +220,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -293,16 +227,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -346,20 +270,138 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">About me</h1>
+<h1 class="title toc-ignore">More About me</h1>
 
 </div>
 
 
-<div id="this-page-has-information-about-me" class="section level1">
-<h1>This page has information about me</h1>
-<p>I learn p8105.</p>
+<div id="education" class="section level1">
+<h1>Education</h1>
+<div style="font-weight: bold">
+Columbia University
+</div>
+<div>
+Master of Science in Biostatistics, Data Science Track
+</div>
+<div>
+2021.09 - 2023.05
+</div>
+<div style="font-weight: bold">
+Huazhong University of Science and Technology
+</div>
+<div>
+B.Eng. in Biomedical Engineering, Electrical and Computer Engineering Track, GPA: 3.60 / 4.00
+</div>
+<div>
+2016.09 - 2020.06
+<div>
+<div style="font-style: italic">
+Outstanding Graduate, Merit-Based Undergraduate Scholarship,Outstanding Individual in University Innovation and Entrepreneurship Activity
+</div>
+</div>
+<div id="experience" class="section level1">
+<h1>Experience</h1>
+<div style="font-weight: bold">
+Software Engineer, Full-Time
+</div>
+<span style="font-style: italic">iFLYTEK Co., Ltd.</span>(2020.12 - 2021.08)
+<ul>
+<li>
+Embedded Vue.js in frontend to request APIs; provided solutions for incomplete error indication by requesting APIs in a loop via WebSockets when overloading more than 15 files
+</li>
+<li>
+Re-sealed components in Element-UI for uploading multiple files each time; adopted Flex to regulate layouts
+</li>
+<li>
+Displayed 4000+ real-time employee Information List; realized dynamic route matching via router.addRoutes to load profiles without restarting a new page and reduce 20% memory consumption; polished with better User Interface
+</li>
+<li>
+Applied EventBus to pass on values using $emit &amp; $on for calling cross-page function; designed unit test for blocks
+</li>
+<li>
+Implemented navigation and lazy loading routes via Vue-Router and shortened the time to homepage by 30%
+</li>
+</ul>
+<div style="font-weight: bold">
+Software Engineer, Internship
+</div>
+<span style="font-style: italic">iFLYTEK Co., Ltd.</span>(2020.07 - 2020.12)
+<ul>
+<li>
+Built project environment swiftly based on Vue Cli; optimized and packaged through Webpack; prepared CSS via Sass
+</li>
+<li>
+Encapsulated Axios library for requesting APIs to receive data on single-page application; stored the state data in VueX for management employed JS cookies for token storage and combined with VueX to realize permission control
+</li>
+<li>
+Manipulated Echarts graphics with DOM for data annotation; delivered 5 days ahead with large-scale satisfaction
+</li>
+<li>
+Simulated background data by mock.js and mixins.js in the frontend; launched version control system through Git
+</li>
+</ul>
+</div>
+<div id="project" class="section level1">
+<h1>Project</h1>
+<div style="font-weight: bold">
+Student Social Network Application
+</div>
+<div style="font-style: italic">
+Node.js, Express, React, Redux, MongoDB, ES6+
+</div>
+<ul>
+<li>
+Built backend amount of APIs; integrated React frontend to cooperated with APIs and created the workflow
+</li>
+<li>
+Protected routes/endpoints with JWT(JSON Web Tokens); established reducers and actions for resources
+</li>
+<li>
+Integrated Redux for app state management and container components creation; conducted APIs testing with Postman and app testing with Redux Chrome extension
+</li>
+</ul>
+<div style="font-weight: bold">
+Shopping Online Applets for Community
+</div>
+<ul>
+<li>
+Established shopping cart module in React framework; implemented Spring MVC backend with MongoDB databases by MongoEngine; tested the page compatibility of 8+ different-sized mobile equipments
+</li>
+<li>
+Incorporated Redux-Saga to process the updated request and send HTTP request to the server; captured responses to manage product list in real time combined with the pull-down refresh
+</li>
+<li>
+Encapsulated wx.request as a common plug-in; added the bottom tabbar and extracted as public components
+</li>
+</ul>
+</div>
+<div id="competition" class="section level1">
+<h1>Competition</h1>
+<div style="font-weight: bold">
+Biomolecular Design Competition (BIOMOD)
+</div>
+<ul>
+<li>
+Developed a new nanomachine via wedging Azobenzene and its derivative into DNA with 30% efficiency improvement
+</li>
+<li>
+Modelized the structure in caDNAno software and revised by analysing the data from experiments to increase the stability by 40%
+</li>
+<li>
+Created <a href="https://www.youtube.com/watch?v=qm15e49A770">video</a> and <a href="https://hust-china2018.github.io/BUTTERFLY_EFFECT/">webpages</a> in JavaScript, CSS, HTML
+</li>
+<li>
+Coordinated brainstorms to develop a novel nanomotor in DNA Self-Assembly with 30% efficiency improvement
+</li>
+<li>
+Organized the team perfomance of eight undergraduates and made oral presentation on site: Butterfly Effect- A New Nanomachine Design, Biomolecular Design Competition, San Francisco, US, Oct. 2018
+</li>
+</ul>
+<p><img src="images/me.jpg" style="width:50%"> <span><img src="images/teamwork.jpg" style="width:50%;float:right"></span></p>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -392,35 +434,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
