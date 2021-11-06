@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Dashboard"
 output: 
@@ -23,6 +22,24 @@ Column {data-width=500}
 
 ```{r cars}
 data("instacart")
+popular_items = 
+  instacart %>% 
+  filter(aisle %in% c("baking ingredients", "dog food care", "packaged vegetables fruits")) %>% 
+  select("aisle", "order_number", "product_name") %>% 
+  count(aisle, product_name, sort = TRUE) %>% 
+  filter(
+   n > 200, n < 1000
+  ) %>%
+  plot_ly(x = ~product_name, y = ~n,  type = "scatter", mode = "markers", colors = "viridis")
+popular_items
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
 aisle_num = instacart %>% 
   distinct(aisle, .keep_all = TRUE) %>% 
   count()
@@ -39,24 +56,7 @@ ordered_num_from_aisles %>%
   plot_ly(x = ~n, y = ~aisle, color = ~aisle, type = "bar", colors = "viridis")
 
 #ordered_num_from_aisles
-```
 
-Column {data-width=500}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-popular_items = 
-  instacart %>% 
-  filter(aisle %in% c("baking ingredients", "dog food care", "packaged vegetables fruits")) %>% 
-  select("aisle", "order_number", "product_name") %>% 
-  count(aisle, product_name, sort = TRUE) %>% 
-  filter(
-   n > 80, n < 1000
-  ) %>%
-  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "scatter", mode = "markers", colors = "viridis")
-popular_items
 ```
 
 ### Chart C
@@ -70,76 +70,3 @@ instacart %>%
   plot_ly(x = ~order_number, color = ~department, type = "box", colors = "viridis")
 ```
 
-=======
----
-title: "Dashboard"
-output: 
-  flexdashboard::flex_dashboard:
-    orientation: columns
-    vertical_layout: fill
-    #source_code: embed
----
-
-```{r setup, include=FALSE}
-library(flexdashboard)
-library(tidyverse)
-library(p8105.datasets)
-
-library(plotly)
-```
-
-Column {data-width=500}
------------------------------------------------------------------------
-
-### Chart A
-
-```{r cars}
-data("instacart")
-aisle_num = instacart %>% 
-  distinct(aisle, .keep_all = TRUE) %>% 
-  count()
-
-ordered_num_from_aisles = 
-  instacart %>%
-  count(aisle,sort = TRUE)
-
-ordered_num_from_aisles %>% 
-  mutate(aisle = fct_reorder(aisle,n)) %>% 
-  filter(
-    n > 12000
-  ) %>% 
-  plot_ly(x = ~n, y = ~aisle, color = ~aisle, type = "bar", colors = "viridis")
-
-#ordered_num_from_aisles
-```
-
-Column {data-width=500}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-popular_items = 
-  instacart %>% 
-  filter(aisle %in% c("baking ingredients", "dog food care", "packaged vegetables fruits")) %>% 
-  select("aisle", "order_number", "product_name") %>% 
-  count(aisle, product_name, sort = TRUE) %>% 
-  filter(
-   n > 80, n < 1000
-  ) %>%
-  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "scatter", mode = "markers", colors = "viridis")
-popular_items
-```
-
-### Chart C
-
-```{r}
-instacart %>%  
-  filter(
-    order_dow == "0"
-  ) %>% 
-  mutate(neighbourhood = fct_reorder(department, order_number)) %>% 
-  plot_ly(x = ~order_number, color = ~department, type = "box", colors = "viridis")
-```
-
->>>>>>> e95bbabab16e779866541b5eb337f9e1891e9a77
