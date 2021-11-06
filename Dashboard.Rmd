@@ -46,16 +46,16 @@ Column {data-width=500}
 ### Chart B
 
 ```{r}
-#popular_items = 
+popular_items = 
   instacart %>% 
   filter(aisle %in% c("baking ingredients", "dog food care", "packaged vegetables fruits")) %>% 
   select("aisle", "order_number", "product_name") %>% 
   count(aisle, product_name, sort = TRUE) %>% 
   filter(
-    n > 800
+   n > 80, n < 1000
   ) %>%
-  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "scatter", colors = "viridis")
-#popular_items
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "scatter", mode = "markers", colors = "viridis")
+popular_items
 ```
 
 ### Chart C
