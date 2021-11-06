@@ -1,12 +1,62 @@
 ---
-title: "About me"
+title: "More About me"
 output: 
   html_document:
-    toc: true
-    toc_float: true
+    toc: false
+    toc_float: false
 ---
 
-# This page has information about me
+# Education
+<div style = "font-weight: bold"> Columbia University </div>
+<div>Master of Science in Biostatistics, Data Science Track</div>	
+<div>2021.09 - 2023.05</div>	
 
- I learn p8105.
- 
+<div style = "font-weight: bold"> Huazhong University of Science and Technology </div>
+<div>B.Eng. in Biomedical Engineering, Electrical and Computer Engineering Track, GPA: 3.60 / 4.00</div>		
+<div>2016.09 - 2020.06<div>
+<div style = "font-style: italic">Outstanding Graduate, Merit-Based Undergraduate Scholarship,Outstanding Individual in University Innovation and Entrepreneurship Activity</div>
+
+# Experience
+<div style = "font-weight: bold"> Software Engineer, Full-Time </div>
+<span style = "font-style: italic">iFLYTEK Co., Ltd.</span>(2020.12 - 2021.08)
+<ul>
+<li>Embedded Vue.js in frontend to request APIs; provided solutions for incomplete error indication by requesting APIs in   a loop via WebSockets when overloading more than 15 files</li>
+<li>Re-sealed components in Element-UI for uploading multiple files each time; adopted Flex to regulate layouts</li>
+<li>Displayed 4000+ real-time employee Information List; realized dynamic route matching via router.addRoutes to load profiles without restarting a new page and reduce 20% memory consumption; polished with better User Interface</li>
+<li>Applied EventBus to pass on values using $emit & $on for calling cross-page function; designed unit test for blocks</li>
+<li>Implemented navigation and lazy loading routes via Vue-Router and shortened the time to homepage by 30% </li>
+</ul>
+
+<div style = "font-weight: bold"> Software Engineer, Internship </div>
+<span style = "font-style: italic">iFLYTEK Co., Ltd.</span>(2020.07 - 2020.12)
+<ul>
+<li>Built project environment swiftly based on Vue Cli; optimized and packaged through Webpack; prepared CSS via Sass</li>
+<li>Encapsulated Axios library for requesting APIs to receive data on single-page application; stored the state data in VueX for management employed JS cookies for token storage and combined with VueX to realize permission control</li>
+<li>Manipulated Echarts graphics with DOM for data annotation; delivered 5 days ahead with large-scale satisfaction</li>
+<li>Simulated background data by mock.js and mixins.js in the frontend; launched version control system through Git</li>
+</ul>
+
+# Project
+<div style = "font-weight: bold"> Student Social Network Application </div>
+<div style = "font-style: italic">Node.js, Express, React, Redux, MongoDB, ES6+</div>
+<ul>
+<li>Built backend amount of APIs; integrated React frontend to cooperated with APIs and created the workflow</li>
+<li>Protected routes/endpoints with JWT(JSON Web Tokens); established reducers and actions for resources</li>
+<li>Integrated Redux for app state management and container components creation; conducted APIs testing with Postman and app testing with Redux Chrome extension</li> </ul>
+
+<div style = "font-weight: bold"> Shopping Online Applets for Community </div>
+<ul>
+<li>Established shopping cart module in React framework; implemented Spring MVC backend with MongoDB databases by MongoEngine; tested the page compatibility of 8+ different-sized mobile equipments</li>
+<li>Incorporated Redux-Saga to process the updated request and send HTTP request to the server; captured responses to manage product list in real time combined with the pull-down refresh</li>
+<li>Encapsulated wx.request as a common plug-in; added the bottom tabbar and extracted as public components</li> 
+</ul>
+
+# Competition
+<div style = "font-weight: bold">Biomolecular Design Competition (BIOMOD)</div>
+<ul>
+<li>Developed a new nanomachine via wedging Azobenzene and its derivative into DNA with 30% efficiency improvement</li>
+<li>Modelized the structure in caDNAno software and revised by analysing the data from experiments to increase the stability by 40%</li>
+<li>Created [video](https://www.youtube.com/watch?v=qm15e49A770) and [webpages](https://hust-china2018.github.io/BUTTERFLY_EFFECT/) in JavaScript</li>
+<li>Coordinated brainstorms to develop a novel nanomotor in DNA Self-Assembly with 30% efficiency improvement</li>
+<li>Organized the team perfomance of eight undergraduates and made oral presentation on site: Butterfly Effect- A New Nanomachine Design, Biomolecular Design Competition, San Francisco, US, Oct. 2018</li>
+</ul>

@@ -1,24 +1,22 @@
 ---
-title: "My awesome website"
+title: "Dantong Zhu"
 output: 
   html_document:
     toc: true
     toc_float: true
+    highlight: pygments
 ---
 
-# This is Jeff's awesome website
+## Home
+
+Welcome to Dantong Zhu's personal website!
+
+## Self-introduction
+
+I’m Dantong, a master student at Columbia University. After undergraduate, I change my career path from engineering to software development. I entered a tech company to be a software developer and accumulated rich experience in JavaScript, CSS, HTML and became familiar with frameworks such as Vue.js, React.js and Node.js. My past work focused on the web development of enterprise information system. Currently I'm looking for the summer internship opportunities. I have confirmed my career path and would like to still dive into the software development field after graduation. Here's my [LinkedIn](https://www.linkedin.com/in/dantong-zhu/). 
 
 
-## Links
-
-*[Google](https://www.google.com/)
-*[P8105](p8105.com)
-
-## local image
-
-<img src = "images/nino.jpg" style = "width:100%">
-
-
-## Link to page within the site
+## More details about me
 [About me](about.html)
+
 
